@@ -1,5 +1,9 @@
 package itteration
 
 func Repeat(word string, count int) string {
-	return word
+	result := word
+	for i := 1; i < count; i++ {
+		result += " " + word
+	}
+	return result
 }
