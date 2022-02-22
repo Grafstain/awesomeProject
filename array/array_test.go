@@ -33,6 +33,7 @@ func TestArraySum(t *testing.T) {
 }
 
 func checkSums(t *testing.T, got []int, want []int) {
+	t.Helper()
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("want %v got %v", want, got)
 	}
