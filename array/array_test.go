@@ -5,8 +5,9 @@ import (
 )
 
 func TestArraySum(t *testing.T) {
-	t.Run("Суммирование элементов массива", func(t *testing.T) {
-		numbers := [5]int{1, 2, 3, 4, 5}
+
+	t.Run("Суммирование элементов массива любого размера", func(t *testing.T) {
+		numbers := []int{1, 2, 3, 4, 5}
 		got := ArraySum(numbers)
 		want := 15
 		if got != want {

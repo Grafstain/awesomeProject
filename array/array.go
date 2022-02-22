@@ -1,6 +1,6 @@
 package array
 
-func ArraySum(numbers [5]int) int {
+func ArraySum(numbers []int) int {
 	sum := 0
 	//for i:=0;i <len(numbers);i++{
 	//	sum += numbers[i]
